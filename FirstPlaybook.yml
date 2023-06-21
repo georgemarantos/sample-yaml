@@ -1,0 +1,7 @@
+---
+- name: "My First Playbook"
+  home: localhost
+
+  tasks:
+  - name: "Test Network Connectivity"
+    ping:
