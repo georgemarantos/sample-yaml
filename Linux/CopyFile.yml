@@ -1,0 +1,12 @@
+---
+- name: "Copy files to remote client"
+  host: webservers
+
+  tasks:
+  - name: "Copying file"
+    copy:
+      src: /etc/file.cfg
+      dest: /temp
+      owner: gmarantos
+      group: devs
+      mode: 0644
